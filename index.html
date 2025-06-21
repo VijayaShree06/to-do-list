@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>TO-DO LIST</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-list">
+            <h1>TO-DO LIST</h1>
+            <div class="status-container">
+                <div class="details">
+                    <h3>Keep It Up!</h3>
+                    <div id="progressbar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div class="status-number">
+                    <p id="numbers">0/0</p>
+                </div>
+            </div>
+            <form class="input-area">
+                <input type="text" name="task-input" id="task-input" placeholder="Add a task..."required autocomplete="on">
+                <button type ="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button> 
+            </form>
+            <div class="list-container">
+                <ul id="task-list"></ul>
+                <img src="img/empty.jpg.jpeg" alt="List is empty" class="List-is-empty" width="225" height="225">
+            </div> 
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</html>
